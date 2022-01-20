@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 import pytesseract
 import os
+pytesseract.pytesseract.tesseract_cmd = r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 def load_image(image_file):
     img = Image.open(image_file)
     return img
@@ -20,7 +21,6 @@ if image_file is not None :
     if  click:
         st.header("result: ")
         img=os.path.join("fileDir", image_file.name)
-        pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
         img= cv2.imread(img)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         boxes=pytesseract.image_to_data(img)
