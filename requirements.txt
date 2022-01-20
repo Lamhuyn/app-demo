@@ -1,4 +1,4 @@
 opencv-python-headless
 numpy
-pytesseract
+pytesseract==3.04
 tesseract
