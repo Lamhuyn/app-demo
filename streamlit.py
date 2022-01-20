@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import os
 from modules.predict import main
+
 def load_image(image_file):
     img = Image.open(image_file)
     return img
