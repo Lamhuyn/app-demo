@@ -1,6 +1,6 @@
 import cv2 
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r"/usr/local/bin/tesseract"
+pytesseract.pytesseract.tesseract_cmd = r"/usr/local/lib/python3.9/site-packages"
 def main(imgage):
     img= cv2.imread(imgage)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
