@@ -1,4 +1,3 @@
 opencv-python-headless
-cv2
 PIL
 pytesseract
