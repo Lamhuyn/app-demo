@@ -2,4 +2,4 @@ opencv-python-headless
 numpy
 tesseract-ocr
 streamlit
-os
+
