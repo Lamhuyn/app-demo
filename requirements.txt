@@ -1,7 +1,5 @@
 opencv-python-headless
 numpy
-ocr
 tesseract-ocr
-tesseract-ocr-por
 streamlit
 os
