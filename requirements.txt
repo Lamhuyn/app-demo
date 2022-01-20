@@ -2,5 +2,5 @@ opencv-python-headless
 numpy
 pytesseract
 tesseract-ocr
-streamlit
+
 
