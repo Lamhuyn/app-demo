@@ -20,6 +20,7 @@ if image_file is not None :
     if  click:
         st.header("result: ")
         img=os.path.join("fileDir", image_file.name)
+        pytesseract.pytesseract.tesseract_cmd = "/usr/local/Cellar/tesseract/5.0.0/bin/tesseract"
         img= cv2.imread(img)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         boxes=pytesseract.image_to_data(img)
