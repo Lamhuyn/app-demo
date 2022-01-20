@@ -1,8 +1,8 @@
 import cv2 
 import pytesseract
 
-def main(img ):
-    img= cv2.imread(img)
+def main(imgage):
+    img= cv2.imread(imgage)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     boxes=pytesseract.image_to_data(img)
     for x,b in enumerate(boxes.splitlines()):
