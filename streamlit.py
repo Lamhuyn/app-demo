@@ -1,8 +1,6 @@
 import streamlit as st
 from PIL import Image
-import cv2 
 import numpy as np
-import pytesseract
 import os
 from modules.predict import main
 def load_image(image_file):
