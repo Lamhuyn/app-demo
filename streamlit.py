@@ -17,7 +17,7 @@ if image_file is not None :
         f.write((image_file).getbuffer())
     click = st.button("Process")
     if  click:
-        pytesseract.pytesseract.tesseract_cmd = r"/usr/local/Cellar/tesseract/5.0.1/bin/tesseract"
+        pytesseract.pytesseract.tesseract_cmd = r"//usr//local//Cellar//tesseract//5.0.1//bin//tesseract"
         st.header("result: ")
         img=os.path.join("fileDir", image_file.name)
         img= cv2.imread(img)
