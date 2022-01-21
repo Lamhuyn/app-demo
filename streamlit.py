@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import cv2 
 import numpy as np
-import pytesseract import image_to_data
+import pytesseract 
 import os
 def load_image(image_file):
     img = Image.open(image_file)
