@@ -17,12 +17,12 @@ if image_file is not None :
         f.write((image_file).getbuffer())
     click = st.button("Process")
     if  click:
-        config=tessdata_dir_config = "/usr/local/Cellar/tesseract/5.0.1/bin/tesseract"
+        pytesseract.pytesseract.tesseract_cmd = "/usr/local/Cellar/tesseract/5.0.1/bin/tesseract"
         st.header("result: ")
         img=os.path.join("fileDir", image_file.name)
         img= cv2.imread(img)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        boxes=pytesseract.image_to_data(img,config=tessdata_dir_config)
+        boxes=pytesseract.image_to_data(img)
         for x,b in enumerate(boxes.splitlines()):
             if x!=0 :
                 b=b.split()
