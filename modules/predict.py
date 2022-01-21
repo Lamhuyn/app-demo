@@ -1,10 +1,10 @@
 import cv2 
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r"/usr/local/lib/python3.9/site-packages"
+tesseract_cmd = r"/usr/local/Cellar/tesseract/5.0.1/bin/tesseract"
 def main(imgage):
     img= cv2.imread(imgage)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    boxes=pytesseract.image_to_data(img, lang='eng')
+    boxes=pytesseract.image_to_(img, lang='eng')
     for x,b in enumerate(boxes.splitlines()):
             if x!=0 :
                 b=b.split()
