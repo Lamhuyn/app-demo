@@ -4,9 +4,7 @@ import cv2
 import numpy as np
 import pytesseract 
 import os
-def load_image(image_file):
-    img = Image.open(image_file)
-    return img
+
 image_file = st.file_uploader("up load file :", type=["png" , "jpg" , "jpeg"])
 if image_file is not None :
     file_details = {"filename":image_file.name ,
